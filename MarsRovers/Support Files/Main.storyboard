@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choose Rover-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="RoversViewController" id="BYZ-38-t0r" customClass="RoversViewController" customModule="MarsRovers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fZp-fR-w25">
+                                <rect key="frame" x="64" y="251" width="286" height="40"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="XBc-Ew-ho5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AJx-qL-wzQ">
+                                <rect key="frame" x="64" y="321" width="286" height="40"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3y2-b8-kwU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7P9-ek-Eqg">
+                                <rect key="frame" x="64" y="181" width="286" height="40"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9d6-cS-ql6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXh-dj-UE4">
+                                <rect key="frame" x="64" y="429" width="286" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mr6-ju-ugv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="Show Photos">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7P9-ek-Eqg" firstAttribute="trailing" secondItem="fZp-fR-w25" secondAttribute="trailing" id="1f1-eP-mAt"/>
+                            <constraint firstItem="7P9-ek-Eqg" firstAttribute="leading" secondItem="AJx-qL-wzQ" secondAttribute="leading" id="1sf-Rh-NfT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WXh-dj-UE4" secondAttribute="trailing" constant="64" id="2Fn-ex-7h5"/>
+                            <constraint firstItem="7P9-ek-Eqg" firstAttribute="trailing" secondItem="AJx-qL-wzQ" secondAttribute="trailing" id="4ZY-IW-H3t"/>
+                            <constraint firstItem="AJx-qL-wzQ" firstAttribute="top" secondItem="fZp-fR-w25" secondAttribute="bottom" constant="30" id="5n2-tu-chq"/>
+                            <constraint firstItem="7P9-ek-Eqg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="137" id="MLJ-91-5iV"/>
+                            <constraint firstItem="fZp-fR-w25" firstAttribute="top" secondItem="7P9-ek-Eqg" secondAttribute="bottom" constant="30" id="QDr-fX-5UD"/>
+                            <constraint firstItem="WXh-dj-UE4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="SAI-HU-tWN"/>
+                            <constraint firstItem="WXh-dj-UE4" firstAttribute="top" secondItem="AJx-qL-wzQ" secondAttribute="bottom" priority="999" constant="68" id="SPQ-mR-0EH"/>
+                            <constraint firstItem="7P9-ek-Eqg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cex-of-YXc"/>
+                            <constraint firstItem="7P9-ek-Eqg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="ilI-DN-ZFv"/>
+                            <constraint firstItem="7P9-ek-Eqg" firstAttribute="leading" secondItem="fZp-fR-w25" secondAttribute="leading" id="kAS-wl-Zla"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7P9-ek-Eqg" secondAttribute="trailing" constant="64" id="sP0-R3-rra"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choose Rover" largeTitleDisplayMode="always" id="x8k-U9-xbD" userLabel="Choose Rover"/>
+                    <connections>
+                        <outlet property="cameraTextField" destination="fZp-fR-w25" id="ljW-g5-2uf"/>
+                        <outlet property="dateTextField" destination="AJx-qL-wzQ" id="pN8-6j-MuH"/>
+                        <outlet property="roverTextField" destination="7P9-ek-Eqg" id="f6U-qU-1d0"/>
+                        <outlet property="showPhotosButton" destination="WXh-dj-UE4" id="VBt-ZC-9N1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-742.02898550724649" y="-26.116071428571427"/>
+        </scene>
+        <!--Rover Photos View Controller-->
+        <scene sceneID="7eF-3g-3zL">
+            <objects>
+                <viewController storyboardIdentifier="RoverPhotosViewController" id="2Q2-tH-gHh" customClass="RoverPhotosViewController" customModule="MarsRovers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zpZ-8g-d7Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="256" estimatedRowHeight="256" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T6o-Uz-M5x">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" red="0.76455215669014087" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoTableViewCell" rowHeight="265" id="tIM-v7-IbP" customClass="PhotoTableViewCell" customModule="MarsRovers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="265"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tIM-v7-IbP" id="yJd-id-pDR">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="264.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SFI-1j-dNO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="264.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SFI-1j-dNO" firstAttribute="top" secondItem="yJd-id-pDR" secondAttribute="top" id="35Z-QN-4Xf"/>
+                                                <constraint firstAttribute="bottom" secondItem="SFI-1j-dNO" secondAttribute="bottom" id="ITq-ly-9eb"/>
+                                                <constraint firstItem="SFI-1j-dNO" firstAttribute="leading" secondItem="yJd-id-pDR" secondAttribute="leading" id="R17-2v-W1e"/>
+                                                <constraint firstItem="SFI-1j-dNO" firstAttribute="centerX" secondItem="yJd-id-pDR" secondAttribute="centerX" id="XuG-Bh-AXG"/>
+                                                <constraint firstAttribute="trailing" secondItem="SFI-1j-dNO" secondAttribute="trailing" id="gfz-hM-Ouz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="photoImageView" destination="SFI-1j-dNO" id="d0f-db-XMS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="T6o-Uz-M5x" firstAttribute="top" secondItem="0ir-K0-0bl" secondAttribute="top" id="Ipx-es-RzH"/>
+                            <constraint firstItem="T6o-Uz-M5x" firstAttribute="leading" secondItem="0ir-K0-0bl" secondAttribute="leading" id="d7M-Ws-oCR"/>
+                            <constraint firstItem="0ir-K0-0bl" firstAttribute="bottom" secondItem="T6o-Uz-M5x" secondAttribute="bottom" id="dvZ-CX-XUl"/>
+                            <constraint firstItem="0ir-K0-0bl" firstAttribute="trailing" secondItem="T6o-Uz-M5x" secondAttribute="trailing" id="kW0-xj-4gy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0ir-K0-0bl"/>
+                    </view>
+                    <connections>
+                        <outlet property="photosTableView" destination="T6o-Uz-M5x" id="72c-2u-Dyv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bLe-WF-uhj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="59.420289855072468" y="-26.116071428571427"/>
+        </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="YZq-lK-nqs">
+            <objects>
+                <viewController storyboardIdentifier="PhotoViewController" id="2k2-bn-4Jk" customClass="PhotoViewController" customModule="MarsRovers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5xJ-6K-Zdy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hY2-RQ-4jw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IBe-cw-1fP">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="IBe-cw-1fP" secondAttribute="height" id="2m9-Uj-WyN"/>
+                                    <constraint firstAttribute="width" secondItem="IBe-cw-1fP" secondAttribute="width" id="GUZ-ho-QhR"/>
+                                    <constraint firstItem="IBe-cw-1fP" firstAttribute="top" secondItem="hY2-RQ-4jw" secondAttribute="top" id="QHk-tn-x2J"/>
+                                    <constraint firstItem="IBe-cw-1fP" firstAttribute="centerY" secondItem="hY2-RQ-4jw" secondAttribute="centerY" id="QeR-dQ-xFS"/>
+                                    <constraint firstAttribute="trailing" secondItem="IBe-cw-1fP" secondAttribute="trailing" id="Ubq-YH-kEw"/>
+                                    <constraint firstAttribute="bottom" secondItem="IBe-cw-1fP" secondAttribute="bottom" id="ZI0-sq-k3k"/>
+                                    <constraint firstItem="IBe-cw-1fP" firstAttribute="leading" secondItem="hY2-RQ-4jw" secondAttribute="leading" id="kSu-z8-NIQ"/>
+                                    <constraint firstItem="IBe-cw-1fP" firstAttribute="centerX" secondItem="hY2-RQ-4jw" secondAttribute="centerX" id="yhu-aS-U9n"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hY2-RQ-4jw" firstAttribute="leading" secondItem="2QV-2Y-94b" secondAttribute="leading" id="0pZ-xb-aab"/>
+                            <constraint firstItem="hY2-RQ-4jw" firstAttribute="centerY" secondItem="2QV-2Y-94b" secondAttribute="centerY" id="5PG-mE-239"/>
+                            <constraint firstItem="2QV-2Y-94b" firstAttribute="trailing" secondItem="hY2-RQ-4jw" secondAttribute="trailing" id="9tM-PY-X3O"/>
+                            <constraint firstItem="hY2-RQ-4jw" firstAttribute="centerX" secondItem="2QV-2Y-94b" secondAttribute="centerX" id="DTi-Np-Ntp"/>
+                            <constraint firstItem="hY2-RQ-4jw" firstAttribute="bottom" secondItem="2QV-2Y-94b" secondAttribute="bottom" id="Kia-wt-WPc"/>
+                            <constraint firstItem="2QV-2Y-94b" firstAttribute="top" secondItem="hY2-RQ-4jw" secondAttribute="top" id="V7g-EC-XI5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2QV-2Y-94b"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="IBe-cw-1fP" id="ljo-tz-bLm"/>
+                        <outlet property="scrollView" destination="hY2-RQ-4jw" id="Hhq-6F-43S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xGP-hW-UdL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="998.55072463768124" y="-35.491071428571423"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3174EBC2305D76C0068E458 /* Cameras.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3174EBB2305D76C0068E458 /* Cameras.swift */; };
+		A353B9A12300AB70003E7D6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9A02300AB70003E7D6A /* AppDelegate.swift */; };
+		A353B9A82300AB71003E7D6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A353B9A72300AB71003E7D6A /* Assets.xcassets */; };
+		A353B9AB2300AB71003E7D6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A353B9A92300AB71003E7D6A /* LaunchScreen.storyboard */; };
+		A353B9B72300ABE2003E7D6A /* PhotosRequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9B52300ABE2003E7D6A /* PhotosRequestParameters.swift */; };
+		A353B9B82300ABE2003E7D6A /* PhotosTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9B62300ABE2003E7D6A /* PhotosTarget.swift */; };
+		A353B9BD2300ABEE003E7D6A /* Swinject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9BB2300ABEE003E7D6A /* Swinject.swift */; };
+		A353B9BE2300ABEE003E7D6A /* RoverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9BC2300ABEE003E7D6A /* RoverModel.swift */; };
+		A353B9C32300AC01003E7D6A /* RoverPhotosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9C02300AC01003E7D6A /* RoverPhotosRouter.swift */; };
+		A353B9C42300AC01003E7D6A /* RoverPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9C12300AC01003E7D6A /* RoverPhotosViewController.swift */; };
+		A353B9C52300AC01003E7D6A /* RoverPhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9C22300AC01003E7D6A /* RoverPhotosViewModel.swift */; };
+		A353B9CF2300AC0A003E7D6A /* StoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9C72300AC0A003E7D6A /* StoryboardInitializable.swift */; };
+		A353B9D02300AC0A003E7D6A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9C82300AC0A003E7D6A /* Router.swift */; };
+		A353B9D12300AC0A003E7D6A /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9CA2300AC0A003E7D6A /* ModalTransition.swift */; };
+		A353B9D22300AC0A003E7D6A /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9CB2300AC0A003E7D6A /* Transition.swift */; };
+		A353B9D32300AC0A003E7D6A /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9CC2300AC0A003E7D6A /* PushTransition.swift */; };
+		A353B9D42300AC0A003E7D6A /* RoverPhotosRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9CE2300AC0A003E7D6A /* RoverPhotosRoute.swift */; };
+		A353B9D92300AC11003E7D6A /* RoverRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9D62300AC11003E7D6A /* RoverRouter.swift */; };
+		A353B9DA2300AC11003E7D6A /* RoversViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9D72300AC11003E7D6A /* RoversViewController.swift */; };
+		A353B9DB2300AC11003E7D6A /* RoversViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9D82300AC11003E7D6A /* RoversViewModel.swift */; };
+		A353B9E02300ACEE003E7D6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A353B9DE2300ACEE003E7D6A /* Main.storyboard */; };
+		A36617422301FBA10045601D /* RoverPhotoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36617412301FBA10045601D /* RoverPhotoProvider.swift */; };
+		A36617442301FD110045601D /* PhotoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36617432301FD110045601D /* PhotoResponse.swift */; };
+		A36617472302083C0045601D /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36617462302083C0045601D /* PhotoTableViewCell.swift */; };
+		A366174A230355060045601D /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3661749230355060045601D /* PhotoViewController.swift */; };
+		A366174C230355410045601D /* PhotoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A366174B230355410045601D /* PhotoRouter.swift */; };
+		A366174E230355860045601D /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A366174D230355860045601D /* PhotoViewModel.swift */; };
+		A36617502303560C0045601D /* PhotoViewRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A366174F2303560C0045601D /* PhotoViewRoute.swift */; };
+		DF5D56A584C77312E5DB60C0 /* Pods_MarsRovers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C16679A3BEEA60E90F7F00 /* Pods_MarsRovers.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		80C16679A3BEEA60E90F7F00 /* Pods_MarsRovers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarsRovers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B5EC102BD84B80332C0B788 /* Pods-MarsRovers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsRovers.debug.xcconfig"; path = "Target Support Files/Pods-MarsRovers/Pods-MarsRovers.debug.xcconfig"; sourceTree = "<group>"; };
+		A3174EBB2305D76C0068E458 /* Cameras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cameras.swift; sourceTree = "<group>"; };
+		A353B99D2300AB70003E7D6A /* MarsRovers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsRovers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A353B9A02300AB70003E7D6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A353B9A72300AB71003E7D6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A353B9AA2300AB71003E7D6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A353B9AC2300AB71003E7D6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A353B9B52300ABE2003E7D6A /* PhotosRequestParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosRequestParameters.swift; sourceTree = "<group>"; };
+		A353B9B62300ABE2003E7D6A /* PhotosTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosTarget.swift; sourceTree = "<group>"; };
+		A353B9BB2300ABEE003E7D6A /* Swinject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swinject.swift; sourceTree = "<group>"; };
+		A353B9BC2300ABEE003E7D6A /* RoverModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoverModel.swift; sourceTree = "<group>"; };
+		A353B9C02300AC01003E7D6A /* RoverPhotosRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoverPhotosRouter.swift; sourceTree = "<group>"; };
+		A353B9C12300AC01003E7D6A /* RoverPhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoverPhotosViewController.swift; sourceTree = "<group>"; };
+		A353B9C22300AC01003E7D6A /* RoverPhotosViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoverPhotosViewModel.swift; sourceTree = "<group>"; };
+		A353B9C72300AC0A003E7D6A /* StoryboardInitializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
+		A353B9C82300AC0A003E7D6A /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A353B9CA2300AC0A003E7D6A /* ModalTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
+		A353B9CB2300AC0A003E7D6A /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		A353B9CC2300AC0A003E7D6A /* PushTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
+		A353B9CE2300AC0A003E7D6A /* RoverPhotosRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoverPhotosRoute.swift; sourceTree = "<group>"; };
+		A353B9D62300AC11003E7D6A /* RoverRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoverRouter.swift; sourceTree = "<group>"; };
+		A353B9D72300AC11003E7D6A /* RoversViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoversViewController.swift; sourceTree = "<group>"; };
+		A353B9D82300AC11003E7D6A /* RoversViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoversViewModel.swift; sourceTree = "<group>"; };
+		A353B9DE2300ACEE003E7D6A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A36617412301FBA10045601D /* RoverPhotoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverPhotoProvider.swift; sourceTree = "<group>"; };
+		A36617432301FD110045601D /* PhotoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoResponse.swift; sourceTree = "<group>"; };
+		A36617462302083C0045601D /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		A3661749230355060045601D /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		A366174B230355410045601D /* PhotoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRouter.swift; sourceTree = "<group>"; };
+		A366174D230355860045601D /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		A366174F2303560C0045601D /* PhotoViewRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewRoute.swift; sourceTree = "<group>"; };
+		E33597EB6D3DDC7C1D05AD61 /* Pods-MarsRovers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsRovers.release.xcconfig"; path = "Target Support Files/Pods-MarsRovers/Pods-MarsRovers.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A353B99A2300AB70003E7D6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF5D56A584C77312E5DB60C0 /* Pods_MarsRovers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		508D08EED6A7D926E24E2FE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80C16679A3BEEA60E90F7F00 /* Pods_MarsRovers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A353B9942300AB70003E7D6A = {
+			isa = PBXGroup;
+			children = (
+				A353B99F2300AB70003E7D6A /* MarsRovers */,
+				A353B99E2300AB70003E7D6A /* Products */,
+				B3B46A8205F0C2FAD5500DD8 /* Pods */,
+				508D08EED6A7D926E24E2FE3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A353B99E2300AB70003E7D6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A353B99D2300AB70003E7D6A /* MarsRovers.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A353B99F2300AB70003E7D6A /* MarsRovers */ = {
+			isa = PBXGroup;
+			children = (
+				A353B9D52300AC11003E7D6A /* Rovers */,
+				A353B9BF2300AC01003E7D6A /* Photos */,
+				A3661748230354390045601D /* Photo */,
+				A353B9B92300ABEE003E7D6A /* Models */,
+				A353B9BA2300ABEE003E7D6A /* Dependencies */,
+				A353B9B42300ABE1003E7D6A /* Network */,
+				A353B9C62300AC0A003E7D6A /* Routing */,
+				A353B9AC2300AB71003E7D6A /* Info.plist */,
+				A353B9DC2300ACBA003E7D6A /* Support Files */,
+			);
+			path = MarsRovers;
+			sourceTree = "<group>";
+		};
+		A353B9B42300ABE1003E7D6A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A353B9B52300ABE2003E7D6A /* PhotosRequestParameters.swift */,
+				A36617412301FBA10045601D /* RoverPhotoProvider.swift */,
+				A353B9B62300ABE2003E7D6A /* PhotosTarget.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A353B9B92300ABEE003E7D6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A353B9BC2300ABEE003E7D6A /* RoverModel.swift */,
+				A3174EBB2305D76C0068E458 /* Cameras.swift */,
+				A36617432301FD110045601D /* PhotoResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A353B9BA2300ABEE003E7D6A /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				A353B9BB2300ABEE003E7D6A /* Swinject.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		A353B9BF2300AC01003E7D6A /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				A353B9CE2300AC0A003E7D6A /* RoverPhotosRoute.swift */,
+				A353B9C12300AC01003E7D6A /* RoverPhotosViewController.swift */,
+				A353B9C22300AC01003E7D6A /* RoverPhotosViewModel.swift */,
+				A353B9C02300AC01003E7D6A /* RoverPhotosRouter.swift */,
+				A3661745230208170045601D /* Cell */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		A353B9C62300AC0A003E7D6A /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				A353B9C72300AC0A003E7D6A /* StoryboardInitializable.swift */,
+				A353B9C82300AC0A003E7D6A /* Router.swift */,
+				A353B9C92300AC0A003E7D6A /* Transitions */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		A353B9C92300AC0A003E7D6A /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				A353B9CA2300AC0A003E7D6A /* ModalTransition.swift */,
+				A353B9CB2300AC0A003E7D6A /* Transition.swift */,
+				A353B9CC2300AC0A003E7D6A /* PushTransition.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		A353B9D52300AC11003E7D6A /* Rovers */ = {
+			isa = PBXGroup;
+			children = (
+				A353B9D72300AC11003E7D6A /* RoversViewController.swift */,
+				A353B9D82300AC11003E7D6A /* RoversViewModel.swift */,
+				A353B9D62300AC11003E7D6A /* RoverRouter.swift */,
+			);
+			path = Rovers;
+			sourceTree = "<group>";
+		};
+		A353B9DC2300ACBA003E7D6A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A353B9DE2300ACEE003E7D6A /* Main.storyboard */,
+				A353B9A92300AB71003E7D6A /* LaunchScreen.storyboard */,
+				A353B9A72300AB71003E7D6A /* Assets.xcassets */,
+				A353B9A02300AB70003E7D6A /* AppDelegate.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		A3661745230208170045601D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A36617462302083C0045601D /* PhotoTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A3661748230354390045601D /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				A366174F2303560C0045601D /* PhotoViewRoute.swift */,
+				A3661749230355060045601D /* PhotoViewController.swift */,
+				A366174D230355860045601D /* PhotoViewModel.swift */,
+				A366174B230355410045601D /* PhotoRouter.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		B3B46A8205F0C2FAD5500DD8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B5EC102BD84B80332C0B788 /* Pods-MarsRovers.debug.xcconfig */,
+				E33597EB6D3DDC7C1D05AD61 /* Pods-MarsRovers.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A353B99C2300AB70003E7D6A /* MarsRovers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A353B9AF2300AB71003E7D6A /* Build configuration list for PBXNativeTarget "MarsRovers" */;
+			buildPhases = (
+				A26193C12288B02225C496E0 /* [CP] Check Pods Manifest.lock */,
+				A353B9992300AB70003E7D6A /* Sources */,
+				A353B99A2300AB70003E7D6A /* Frameworks */,
+				A353B99B2300AB70003E7D6A /* Resources */,
+				AD4D09BA8E4FD9CD96FEF035 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarsRovers;
+			productName = MarsRovers;
+			productReference = A353B99D2300AB70003E7D6A /* MarsRovers.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A353B9952300AB70003E7D6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Artem Klimov";
+				TargetAttributes = {
+					A353B99C2300AB70003E7D6A = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A353B9982300AB70003E7D6A /* Build configuration list for PBXProject "MarsRovers" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A353B9942300AB70003E7D6A;
+			productRefGroup = A353B99E2300AB70003E7D6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A353B99C2300AB70003E7D6A /* MarsRovers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A353B99B2300AB70003E7D6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A353B9AB2300AB71003E7D6A /* LaunchScreen.storyboard in Resources */,
+				A353B9E02300ACEE003E7D6A /* Main.storyboard in Resources */,
+				A353B9A82300AB71003E7D6A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A26193C12288B02225C496E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarsRovers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD4D09BA8E4FD9CD96FEF035 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarsRovers/Pods-MarsRovers-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarsRovers/Pods-MarsRovers-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarsRovers/Pods-MarsRovers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A353B9992300AB70003E7D6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A36617472302083C0045601D /* PhotoTableViewCell.swift in Sources */,
+				A353B9D12300AC0A003E7D6A /* ModalTransition.swift in Sources */,
+				A353B9D02300AC0A003E7D6A /* Router.swift in Sources */,
+				A353B9C32300AC01003E7D6A /* RoverPhotosRouter.swift in Sources */,
+				A353B9DA2300AC11003E7D6A /* RoversViewController.swift in Sources */,
+				A366174E230355860045601D /* PhotoViewModel.swift in Sources */,
+				A353B9BE2300ABEE003E7D6A /* RoverModel.swift in Sources */,
+				A353B9B72300ABE2003E7D6A /* PhotosRequestParameters.swift in Sources */,
+				A353B9BD2300ABEE003E7D6A /* Swinject.swift in Sources */,
+				A353B9D22300AC0A003E7D6A /* Transition.swift in Sources */,
+				A353B9C52300AC01003E7D6A /* RoverPhotosViewModel.swift in Sources */,
+				A353B9D32300AC0A003E7D6A /* PushTransition.swift in Sources */,
+				A366174A230355060045601D /* PhotoViewController.swift in Sources */,
+				A3174EBC2305D76C0068E458 /* Cameras.swift in Sources */,
+				A36617442301FD110045601D /* PhotoResponse.swift in Sources */,
+				A366174C230355410045601D /* PhotoRouter.swift in Sources */,
+				A353B9C42300AC01003E7D6A /* RoverPhotosViewController.swift in Sources */,
+				A353B9DB2300AC11003E7D6A /* RoversViewModel.swift in Sources */,
+				A353B9CF2300AC0A003E7D6A /* StoryboardInitializable.swift in Sources */,
+				A353B9D92300AC11003E7D6A /* RoverRouter.swift in Sources */,
+				A36617502303560C0045601D /* PhotoViewRoute.swift in Sources */,
+				A36617422301FBA10045601D /* RoverPhotoProvider.swift in Sources */,
+				A353B9B82300ABE2003E7D6A /* PhotosTarget.swift in Sources */,
+				A353B9D42300AC0A003E7D6A /* RoverPhotosRoute.swift in Sources */,
+				A353B9A12300AB70003E7D6A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A353B9A92300AB71003E7D6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A353B9AA2300AB71003E7D6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A353B9AD2300AB71003E7D6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A353B9AE2300AB71003E7D6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A353B9B02300AB71003E7D6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B5EC102BD84B80332C0B788 /* Pods-MarsRovers.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B3H5V7DAM;
+				INFOPLIST_FILE = MarsRovers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.MarsRovers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A353B9B12300AB71003E7D6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E33597EB6D3DDC7C1D05AD61 /* Pods-MarsRovers.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B3H5V7DAM;
+				INFOPLIST_FILE = MarsRovers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.MarsRovers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A353B9982300AB70003E7D6A /* Build configuration list for PBXProject "MarsRovers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A353B9AD2300AB71003E7D6A /* Debug */,
+				A353B9AE2300AB71003E7D6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A353B9AF2300AB71003E7D6A /* Build configuration list for PBXNativeTarget "MarsRovers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A353B9B02300AB71003E7D6A /* Debug */,
+				A353B9B12300AB71003E7D6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A353B9952300AB70003E7D6A /* Project object */;
+}
