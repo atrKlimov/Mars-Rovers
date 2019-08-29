@@ -47,8 +47,8 @@ class RoverPhotosViewModel: RoverPhotosViewModeling {
     }
     
     private func getPhotos() {
-        provider.getPhotos(parameters: requestParameters).bind { (photos) in
-            self.addNewPhotos(photos)
+        provider.getPhotos(parameters: requestParameters).bind {[weak self] (photos) in
+            self?.addNewPhotos(photos)
         }.disposed(by: disposeBag)
         
     }
