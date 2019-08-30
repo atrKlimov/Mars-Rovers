@@ -10,12 +10,21 @@ import Foundation
 import RxSwift
 import RxCocoa
 
+protocol RoverViewModeling {
+    var roversData: Observable<[Rover]> {get set}
+    var rover: PublishSubject<Rover> {get set}
+    var router: RoversRouter.Routes {get set}
+    var roverText: BehaviorRelay<String> {get set}
+    var cameraText: BehaviorRelay<String> {get set}
+    var dateText: BehaviorRelay<String>  {get set}
+    var isParametersValid: Observable<Bool> {get}
+    func openSelectedRover()
+}
 
-
-class RoverViewModel {
+class RoverViewModel: RoverViewModeling {
     var roversData: Observable<[Rover]>
     var rover = PublishSubject<Rover>()
-    private let router: RoversRouter.Routes
+    var router: RoversRouter.Routes
     
     var roverText = BehaviorRelay<String>(value: "")
     var cameraText = BehaviorRelay<String>(value: "")

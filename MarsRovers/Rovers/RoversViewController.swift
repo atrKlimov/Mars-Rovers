@@ -16,7 +16,7 @@ class RoversViewController: UIViewController, StoryboardInitializable {
     @IBOutlet weak var dateTextField: UITextField!
     @IBOutlet weak var showPhotosButton: UIButton!
     
-    var viewModel: RoverViewModel?
+    var viewModel: RoverViewModeling?
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -55,16 +55,17 @@ class RoversViewController: UIViewController, StoryboardInitializable {
         
         roverPicker.rx.modelSelected(Rover.self)
             .subscribeOn(MainScheduler())
-            .subscribe(onNext: { rovers in
+            .subscribe(onNext: {[weak self] rovers in
                 guard let rover = rovers.first else {return}
-                self.viewModel?.rover.onNext(rover)
+                self?.viewModel?.rover.onNext(rover)
             })
             .disposed(by: disposeBag)
         
         viewModel?.rover
             .map({ $0.name })
-            .bind(to: roverTextField.rx.text)
-            .disposed(by: disposeBag)
+            .subscribe(onNext: {[weak self] rover in
+                self?.roverTextField.text = rover
+            }).disposed(by: disposeBag)
     }
     
     private func createRoverCameras() {
@@ -74,6 +75,7 @@ class RoversViewController: UIViewController, StoryboardInitializable {
             .bind(to: cameraPicker.rx.itemTitles) { (first, second) in
                 return second.rawValue
             }.disposed(by: disposeBag)
+        
         
         Observable.combineLatest(viewModel!.rover, cameraPicker.rx.itemSelected) { rover, items in
                 return "\(rover.cameras[items.row])"

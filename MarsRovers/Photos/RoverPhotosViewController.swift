@@ -17,8 +17,6 @@ class RoverPhotosViewController: UIViewController, StoryboardInitializable {
     
     var viewModel: RoverPhotosViewModeling?
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpTable()
@@ -39,7 +37,7 @@ class RoverPhotosViewController: UIViewController, StoryboardInitializable {
         photosTableView.rx.willDisplayCell
             .subscribe(onNext: {[weak self] cell, indexPath in
                 if indexPath.row - 1 == self?.viewModel?.imagesPerPage {
-                    self?.viewModel!.loadMorePhotos()
+                    self?.viewModel?.loadMorePhotos()
                 }
             })
             .disposed(by: disposeBag)

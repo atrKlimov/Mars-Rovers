@@ -20,9 +20,7 @@ extension RoverPhotosRoute where Self: RouterProtocol {
     }
     
     func openRoverPhotos(for request: PhotosRequestParameters) {
-        let roverPhotosViewController = RoverPhotosViewController.createFromStoryboard()
-        roverPhotosViewController.viewModel?.requestParameters = request
-        let openPhotoTransition = self.openPhotoTransition
-        open(roverPhotosViewController, transition: openPhotoTransition)
+        let builder = RoverPhotosBuilder(parameters: request)
+        open(builder.viewController, transition: openPhotoTransition)
     }
 }

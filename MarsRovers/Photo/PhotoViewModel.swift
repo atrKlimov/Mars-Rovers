@@ -12,11 +12,12 @@ import RxSwift
 import Kingfisher
 
 class PhotoViewModel {
-    var router: PhotoRouter?
-    var imageURL: String
+    var router: PhotoRouter.Routes
+    var imageURL: String?
 
-    init (imageURL: String) {
+    init (imageURL: String?, router: PhotoRouter) {
         self.imageURL = imageURL
+        self.router = router
     }
     
 }

@@ -24,7 +24,7 @@
 		A353B9D22300AC0A003E7D6A /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9CB2300AC0A003E7D6A /* Transition.swift */; };
 		A353B9D32300AC0A003E7D6A /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9CC2300AC0A003E7D6A /* PushTransition.swift */; };
 		A353B9D42300AC0A003E7D6A /* RoverPhotosRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9CE2300AC0A003E7D6A /* RoverPhotosRoute.swift */; };
-		A353B9D92300AC11003E7D6A /* RoverRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9D62300AC11003E7D6A /* RoverRouter.swift */; };
+		A353B9D92300AC11003E7D6A /* RoversRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9D62300AC11003E7D6A /* RoversRouter.swift */; };
 		A353B9DA2300AC11003E7D6A /* RoversViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9D72300AC11003E7D6A /* RoversViewController.swift */; };
 		A353B9DB2300AC11003E7D6A /* RoversViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A353B9D82300AC11003E7D6A /* RoversViewModel.swift */; };
 		A353B9E02300ACEE003E7D6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A353B9DE2300ACEE003E7D6A /* Main.storyboard */; };
@@ -35,6 +35,8 @@
 		A366174C230355410045601D /* PhotoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A366174B230355410045601D /* PhotoRouter.swift */; };
 		A366174E230355860045601D /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A366174D230355860045601D /* PhotoViewModel.swift */; };
 		A36617502303560C0045601D /* PhotoViewRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A366174F2303560C0045601D /* PhotoViewRoute.swift */; };
+		A38BFBC12317F7350023A2A5 /* RoverPhotosBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38BFBC02317F7350023A2A5 /* RoverPhotosBuilder.swift */; };
+		A38BFBC323186AA60023A2A5 /* PhotoViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38BFBC223186AA60023A2A5 /* PhotoViewBuilder.swift */; };
 		DF5D56A584C77312E5DB60C0 /* Pods_MarsRovers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C16679A3BEEA60E90F7F00 /* Pods_MarsRovers.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +62,7 @@
 		A353B9CB2300AC0A003E7D6A /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		A353B9CC2300AC0A003E7D6A /* PushTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
 		A353B9CE2300AC0A003E7D6A /* RoverPhotosRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoverPhotosRoute.swift; sourceTree = "<group>"; };
-		A353B9D62300AC11003E7D6A /* RoverRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoverRouter.swift; sourceTree = "<group>"; };
+		A353B9D62300AC11003E7D6A /* RoversRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoversRouter.swift; sourceTree = "<group>"; };
 		A353B9D72300AC11003E7D6A /* RoversViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoversViewController.swift; sourceTree = "<group>"; };
 		A353B9D82300AC11003E7D6A /* RoversViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoversViewModel.swift; sourceTree = "<group>"; };
 		A353B9DE2300ACEE003E7D6A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -71,6 +73,8 @@
 		A366174B230355410045601D /* PhotoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRouter.swift; sourceTree = "<group>"; };
 		A366174D230355860045601D /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 		A366174F2303560C0045601D /* PhotoViewRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewRoute.swift; sourceTree = "<group>"; };
+		A38BFBC02317F7350023A2A5 /* RoverPhotosBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverPhotosBuilder.swift; sourceTree = "<group>"; };
+		A38BFBC223186AA60023A2A5 /* PhotoViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewBuilder.swift; sourceTree = "<group>"; };
 		E33597EB6D3DDC7C1D05AD61 /* Pods-MarsRovers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsRovers.release.xcconfig"; path = "Target Support Files/Pods-MarsRovers/Pods-MarsRovers.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				A353B9CE2300AC0A003E7D6A /* RoverPhotosRoute.swift */,
+				A38BFBC02317F7350023A2A5 /* RoverPhotosBuilder.swift */,
 				A353B9C12300AC01003E7D6A /* RoverPhotosViewController.swift */,
 				A353B9C22300AC01003E7D6A /* RoverPhotosViewModel.swift */,
 				A353B9C02300AC01003E7D6A /* RoverPhotosRouter.swift */,
@@ -193,7 +198,7 @@
 			children = (
 				A353B9D72300AC11003E7D6A /* RoversViewController.swift */,
 				A353B9D82300AC11003E7D6A /* RoversViewModel.swift */,
-				A353B9D62300AC11003E7D6A /* RoverRouter.swift */,
+				A353B9D62300AC11003E7D6A /* RoversRouter.swift */,
 			);
 			path = Rovers;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				A366174F2303560C0045601D /* PhotoViewRoute.swift */,
+				A38BFBC223186AA60023A2A5 /* PhotoViewBuilder.swift */,
 				A3661749230355060045601D /* PhotoViewController.swift */,
 				A366174D230355860045601D /* PhotoViewModel.swift */,
 				A366174B230355410045601D /* PhotoRouter.swift */,
@@ -361,6 +367,7 @@
 				A353B9BE2300ABEE003E7D6A /* RoverModel.swift in Sources */,
 				A353B9B72300ABE2003E7D6A /* PhotosRequestParameters.swift in Sources */,
 				A353B9BD2300ABEE003E7D6A /* Swinject.swift in Sources */,
+				A38BFBC12317F7350023A2A5 /* RoverPhotosBuilder.swift in Sources */,
 				A353B9D22300AC0A003E7D6A /* Transition.swift in Sources */,
 				A353B9C52300AC01003E7D6A /* RoverPhotosViewModel.swift in Sources */,
 				A353B9D32300AC0A003E7D6A /* PushTransition.swift in Sources */,
@@ -371,12 +378,13 @@
 				A353B9C42300AC01003E7D6A /* RoverPhotosViewController.swift in Sources */,
 				A353B9DB2300AC11003E7D6A /* RoversViewModel.swift in Sources */,
 				A353B9CF2300AC0A003E7D6A /* StoryboardInitializable.swift in Sources */,
-				A353B9D92300AC11003E7D6A /* RoverRouter.swift in Sources */,
+				A353B9D92300AC11003E7D6A /* RoversRouter.swift in Sources */,
 				A36617502303560C0045601D /* PhotoViewRoute.swift in Sources */,
 				A36617422301FBA10045601D /* RoverPhotoProvider.swift in Sources */,
 				A353B9B82300ABE2003E7D6A /* PhotosTarget.swift in Sources */,
 				A353B9D42300AC0A003E7D6A /* RoverPhotosRoute.swift in Sources */,
 				A353B9A12300AB70003E7D6A /* AppDelegate.swift in Sources */,
+				A38BFBC323186AA60023A2A5 /* PhotoViewBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

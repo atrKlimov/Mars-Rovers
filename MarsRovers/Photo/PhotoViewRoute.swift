@@ -20,10 +20,7 @@ extension PhotoViewRoute where Self: RouterProtocol {
     }
     
     func openPhotoViewer(image: String?) {
-        let transition = openPhotoTransition
-        let photoViewController = PhotoViewController.createFromStoryboard()
-        let model = PhotoViewModel(imageURL: image!)
-        photoViewController.viewModel = model
-        open(photoViewController, transition: transition)
+        let builder = PhotoViewBuilder(image: image)
+        open(builder.viewController, transition: openPhotoTransition)
     }
 }
